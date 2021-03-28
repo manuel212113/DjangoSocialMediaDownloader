@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+    <!--Css Sweatalert2-->
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="static/assets/css/templatemo-host-cloud.css">
+  <link rel="stylesheet" href="static/assets/css/owl.css">
+
+  <title>Django Social Media Downloader - V-0.1 Alpha</title>
+  <!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+  <!-- Additional CSS Files -->
+  {% if video %}
+  <link rel="stylesheet" type="text/css" href="../static/assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../static/assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="../static/assets/css/templatemo-softy-pinko.css">
+
+  {% else %}
+  <link rel="stylesheet" type="text/css" href="static/assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="static/assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="static/assets/css/templatemo-softy-pinko.css">
+  {% endif %}
+
+</head>
+
+<body style="background-image: url('https://i.imgur.com/KoGBOmv.jpg');">
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            {% if video%}
+            <a href="#" class="logo">
+              <img src="../static/assets/images/logo.png" alt="Softy Pinko" />
+            </a>
+            {% else %}
+            <a href="#" class="logo">
+              <img src="static/assets/images/logo.png" alt="Softy Pinko" />
+            </a>
+            {% endif%}
+
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="#welcome" class="active">Home</a></li>
+              <li><a href="#features">Facebook</a></li>
+              <li><a href="#work-process">Instagram Reels</a></li>
+              <li><a href="#testimonials">Youtube</a></li>
+
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- Banner Starts Here -->
+
+
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 offset-md-2">
+          <h2 class="txtsuperiorUrl">Ingresa el enlace del video</h2>
+          <div class="input-group mb-3">
+            <input type="text" required id="urlInput" class="form-control  border border-danger"
+              placeholder="Pegar enlace aqui" aria-label="pegar enlace aqui " aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-danger" id="btnConvertir" type="button" style="margin-left: -10px; color: white; border: none;  background-image: linear-gradient(127deg,rgb(26, 3, 110) 0%, #6a48db 91%);
+                    ">Convertir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  </div>
+
+
+
+  {% if video %}
+
+
+  <div class="card mb-5" style="max-width: 60%; display: grid;">
+    <div class="row g-0">
+      <div class="col-md-5" >
+        <img
+          src="{{image}}"
+          alt="{{video}} imagen"
+          class="img-fluid"       
+           />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{video}}</h5>
+          <p class="card-text">
+            .
+          </p>
+          <p class="card-text">
+            <small class="text-muted"></small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 50%;  margin-top: 100px; margin-left: 20%; align-items: center;">
+    <img class="card-img-top" src="{{image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{video}}</h5>
+      <p class="card-text" style="font-size: small;">{{description}}</p>
+      <a href="{{Download}}" target="_blank" class="btn btn-primary btn-lg active" role="button"
+        aria-pressed="true">MP3</a>
+
+
+    </div>
+
+  </div>
+
+  </div>
+  {% endif %}
+
+  <!-- Banner Ends Here -->
+
+  <!-- ***** Footer Start ***** -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="copyright">Copyright &copy; 2021 Codepenguin - DjangoSocialMediaDownloader</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  {% if video %}
+  <script src="../static/assets/js/jquery-2.1.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="../static/assets/js/popper.js"></script>
+  <script src="../static/assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="../static/assets/js/scrollreveal.min.js"></script>
+  <script src="../static/assets/js/waypoints.min.js"></script>
+  <script src="../static/assets/js/jquery.counterup.min.js"></script>
+  <script src="../static/assets/js/imgfix.min.js"></script>
+
+  <!-- Global Init -->
+  <script src="../static/assets/js/custom.js"></script>
+  {% else %}
+  <script src="static/assets/js/jquery-2.1.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="static/assets/js/popper.js"></script>
+  <script src="static/assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="static/assets/js/scrollreveal.min.js"></script>
+  <script src="static/assets/js/waypoints.min.js"></script>
+  <script src="static/assets/js/jquery.counterup.min.js"></script>
+  <script src="static/assets/js/imgfix.min.js"></script>
+
+  <!-- Global Init -->
+  <script src="static/assets/js/custom.js"></script>
+  <!--Libreria Alertas -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+  {% endif %}
+
+  <script>
+
+    function youtube_parser(url) {
+      var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+      var match = url.match(regExp);
+      return (match && match[7].length == 11) ? match[7] : false;
+    }
+    $(document).ready(function () {
+      $("#btnConvertir").click(function () {
+
+        /*Alerta Cargando*/
+    
+        /* Recibe el link y saca solo el id del video*/
+        var urlVideo = $("#urlInput").val();
+        var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+        if (urlVideo.length > 1 && urlVideo.match(regExp)) {
+          var youtubeUrl = youtube_parser(urlVideo);
+          let timerInterval
+        Swal.fire({
+          title: 'Cargando!',
+          html: 'Obteniendo enlace de descarga',
+          timer: 6000,
+          timerProgressBar: true,
+          didOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+              const content = Swal.getContent()
+              if (content) {
+                const b = content.querySelector('b')
+                if (b) {
+                  b.textContent = Swal.getTimerLeft()
+                }
+              }
+            }, 100)
+          },
+          willClose: () => {
+            clearInterval(timerInterval)
+          }
+        }).then((result) => {
+          /* Read more about handling dismissals below */
+          if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+          }
+        })
+          window.location = "/yt/" + youtubeUrl;
+
+        } else {
+          alert('Url Invalida')
+        }
+      });
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>
